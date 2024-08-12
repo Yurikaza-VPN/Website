@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --button-bg-color: 193, 193, 193;
+  --white: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +32,17 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@font-face {
+  font-family: gilroy;
+  src: url("/fonts/gilroy/Gilroy-Black.ttf");
+  src: url("/fonts/gilroy/Gilroy-Bold.ttf");
+  src: url("/fonts/gilroy/Gilroy-ExtraBold.ttf");
+  src: url("/fonts/gilroy/Gilroy-Heavy.ttf");
+  src: url("/fonts/gilroy/Gilroy-Light.ttf");
+  src: url("/fonts/gilroy/Gilroy-Medium.ttf");
+  src: url("/fonts/gilroy/Gilroy-Regular.ttf");
+  src: url("/fonts/gilroy/Gilroy-SemiBold.ttf");
+  src: url("/fonts/gilroy/Gilroy-Thin.ttf");
 }

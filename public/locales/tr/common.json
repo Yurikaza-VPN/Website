@@ -1,0 +1,35 @@
+{
+  "HomePage": {
+    "Navbar": {
+      "Title": "Yurikaza VPN",
+      "Menu": ["Ana Sayfa", "Dökümantasyon", "Destek", "İletişim"],
+      "Button": "Beta Sürümüne Katılın"
+    },
+    "Hero": {
+      "Title": "Blockchain Tarafından Desteklenen Yeni Nesil VPN.",
+      "Description": "Yurikaza VPN: Blockchain teknolojisiyle çevrimiçi gizlilikte devrim yaratıyor. Merkezi olmayan ağımız benzersiz güvenlik ve hız sağlar. VPN hizmetlerinin geleceğini inşa ederken bize katılın. Şu anda geliştirme aşamasında; lansmanımız için bizi takip etmeye devam edin!",
+      "Button": "Beta Sürümüne Katılın",
+      "Learn More": "Daha fazla bilgi edin"
+    },
+    "CoreFeatures": [
+      {
+        "Title": "Merkeziketsiz Ağ",
+        "Description": "Yurikaza VPN, merkezi olmayan bir düğüm ağına güç sağlamak, tek hata noktalarını ortadan kaldırmak ve güvenliği ve gizliliği artırmak için blockchain kullanıyor."
+      },
+      {
+        "Title": "Askeri Düzeyde Şifreleme",
+        "Description": "VPN'imiz tüm verileri askeri düzeyde protokollerle şifreleyerek çevrimiçi etkinliklerinizin her türlü tehdide karşı güvenli ve gizli olmasını sağlar."
+      },
+      {
+        "Title": "Gelişmiş Anonimlik",
+        "Description": "Yurikaza VPN ile gerçek anonimliği yaşayın. Bağlantınız birden fazla merkezi olmayan düğüm üzerinden yönlendirilerek kimliğinizin ve verilerinizin tamamen izlenemez olması sağlanır."
+      }
+    ],
+    "GetStarted": {
+      "Title": "Yurikaza VPN'i kullanmaya başlamak her zamankinden daha kolay.",
+      "Description": "Gezinmenizi güvence altına alın, gizliliğinizi koruyun ve blockchain'in gücünü keşfedin. Yurikaza VPN'i ilk deneyimleyenlerden biri olun.",
+      "Email": "E-posta...",
+      "Button": "Beta Sürümüne Katılın"
+    }
+  }
+}

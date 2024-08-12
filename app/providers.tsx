@@ -2,6 +2,6 @@
 
 import { SaasProvider } from "@saas-ui/react";
 
-export function Providers({ children }: { children: React.ReactNode }) {
+export const Providers = ({ children }: { children: React.ReactNode }) => {
   return <SaasProvider>{children}</SaasProvider>;
-}
+};

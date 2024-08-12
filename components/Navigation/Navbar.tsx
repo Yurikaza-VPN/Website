@@ -1,39 +1,18 @@
-import {
-  AppShell,
-  Navbar as Nav,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  NavbarLink,
-} from "@saas-ui/react";
-
 import { Button } from "@chakra-ui/react";
 
 export default function Navbar() {
   return (
-    <Nav style={{ paddingTop: 10 }}>
-      <NavbarBrand></NavbarBrand>
-      <NavbarContent>
-        <NavbarItem>
-          <NavbarLink isActive aria-current="page" href="#">
-            Home
-          </NavbarLink>
-        </NavbarItem>
-        <NavbarItem>
-          <NavbarLink href="#">About</NavbarLink>
-        </NavbarItem>
-        <NavbarItem>
-          <NavbarLink href="#">Contact</NavbarLink>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justifyContent="flex-end" spacing="2">
-        <NavbarItem>
-          <Button _activeLink="#">Login</Button>
-        </NavbarItem>
-        <NavbarItem>
-          <Button variant="primary">Sign up</Button>
-        </NavbarItem>
-      </NavbarContent>
-    </Nav>
+    <div className="flex justify-between w-[95%] ml-auto mr-auto pt-5 bg-none">
+      <h1 className="font-bold">Yurikaza VPN</h1>
+      <ul className="flex justify-between w-[25%] ml-auto mr-auto text-center items-center">
+        <li>Home</li>
+        <li>Document</li>
+        <li>Contact</li>
+        <li>Support</li>
+      </ul>
+      <Button _activeLink="#" className=" bg-[button-bg-color] text-[white]">
+        Get started free
+      </Button>
+    </div>
   );
 }
