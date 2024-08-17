@@ -5,6 +5,7 @@ import { Button, Input } from "@chakra-ui/react";
 import { useMutation } from "@tanstack/react-query";
 import getEmailAdress from "@/app/api/reciveEmail";
 import { useState } from "react";
+import { Controls, Player } from "@lottiefiles/react-lottie-player";
 
 export default function HomeGettingStarted() {
   const [email, setEmail] = useState("");
@@ -55,16 +56,18 @@ export default function HomeGettingStarted() {
           </Button>
         </form>
       </div>
-      {/* 
-      <div>
-        <Image
-          src="/GlobeImage.png"
-          alt="Globe image"
-          width={1000}
-          height={50}
+
+      <Player
+        autoplay
+        loop
+        src="/animations/Animation - 1723699689214.json"
+        style={{ height: "800px", width: "800px", paddingTop: 30 }}
+      >
+        <Controls
+          visible={false}
+          buttons={["play", "repeat", "frame", "debug"]}
         />
-      </div>
-      */}
+      </Player>
     </div>
   );
 }
