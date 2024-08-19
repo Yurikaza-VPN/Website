@@ -8,6 +8,12 @@ export default function Navbar() {
         <Link href="/">
           <h1 className="font-bold text-xl">Yurikaza VPN</h1>
         </Link>
+      </div>
+    </div>
+  );
+}
+
+/* 
         <ul className="flex justify-between w-[25%] ml-auto mr-auto text-center items-center gap-8 text-black">
           <Link href="#">
             <li>Home</li>
@@ -18,7 +24,4 @@ export default function Navbar() {
           <li>Contact</li>
           <li>Support</li>
         </ul>
-      </div>
-    </div>
-  );
-}
+*/

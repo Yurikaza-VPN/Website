@@ -20,7 +20,7 @@ export default function Home() {
           <HomeEarthTwo />
           <HomeCoreFeatures />
         </div>
-        <div>
+        <div id="HomeGettingStarted">
           <HomeGettingStarted />
         </div>
       </div>

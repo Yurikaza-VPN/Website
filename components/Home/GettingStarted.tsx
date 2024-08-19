@@ -1,19 +1,30 @@
 "use client";
 
 import Image from "next/image";
-import { Button, Input } from "@chakra-ui/react";
+import { Button, Input, useDisclosure } from "@chakra-ui/react";
 import { useMutation } from "@tanstack/react-query";
 import getEmailAdress from "@/app/api/reciveEmail";
 import { useState } from "react";
 import { Controls, Player } from "@lottiefiles/react-lottie-player";
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+} from "@chakra-ui/react";
 
 export default function HomeGettingStarted() {
   const [email, setEmail] = useState("");
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   const mutation = useMutation({ mutationFn: getEmailAdress });
 
   const getEmail = (e: any) => {
     e.preventDefault();
+    onOpen;
     mutation.mutate({ email: email });
   };
 
@@ -39,6 +50,7 @@ export default function HomeGettingStarted() {
             }}
           />
           <Button
+            onClick={onOpen}
             type="submit"
             className="flex gap-4 !h-[3rem] !w-[9rem]"
             style={{
@@ -55,6 +67,25 @@ export default function HomeGettingStarted() {
             />
           </Button>
         </form>
+
+        <Modal isOpen={isOpen} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent>
+            <ModalHeader>Thank you for subscribing! 🎉 </ModalHeader>
+            <ModalCloseButton />
+            <ModalBody>
+              Check your inbox for a welcome message from Yurikaza VPN. We’re
+              excited to keep you updated on our journey towards a more secure
+              and private internet.
+            </ModalBody>
+
+            <ModalFooter>
+              <Button colorScheme="blue" mr={3} onClick={onClose}>
+                Close
+              </Button>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
       </div>
 
       <Player

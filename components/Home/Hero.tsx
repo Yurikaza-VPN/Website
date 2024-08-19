@@ -1,5 +1,6 @@
 import { Button } from "@chakra-ui/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomeHero() {
   return (
@@ -14,16 +15,22 @@ export default function HomeHero() {
         tuned for our launch!
       </p>
       <div className="buttons flex gap-4 items-center ml-auto mr-auto pt-4">
-        <Button className="!bg-[#C1C1C1] !text-[#000000] w-[12rem] !h-[3rem] bg-opacity-[55%] flex gap-16">
-          Join the Beta
-          <Image
-            src="./icons/tail-right.svg"
-            alt="tail-right"
-            width={15}
-            height={15}
-          />
-        </Button>
-        <p>Learn More</p>
+        <Link
+          href={{
+            pathname: "/documentation",
+            query: { data: "overview" },
+          }}
+        >
+          <Button className="!bg-[#C1C1C1] !text-[#000000] w-[17rem] !h-[3rem] bg-opacity-[55%] flex gap-16">
+            Read Documentation
+            <Image
+              src="./icons/tail-right.svg"
+              alt="tail-right"
+              width={15}
+              height={15}
+            />
+          </Button>
+        </Link>
       </div>
     </div>
   );

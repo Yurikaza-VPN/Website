@@ -8,7 +8,7 @@ export default function HomeCoreFeatures() {
         <Card
           style={{
             height: "20rem",
-            backgroundColor: "#000",
+            background: "none",
           }}
         >
           <CardBody>
@@ -28,7 +28,7 @@ export default function HomeCoreFeatures() {
         <Card
           style={{
             height: "20rem",
-            backgroundColor: "#000",
+            background: "none",
           }}
         >
           <CardBody>
@@ -47,7 +47,7 @@ export default function HomeCoreFeatures() {
         <Card
           style={{
             height: "20rem",
-            backgroundColor: "#000",
+            background: "none",
           }}
         >
           <CardBody>
