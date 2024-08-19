@@ -3,8 +3,8 @@ import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
 
 export default function HomeCoreFeatures() {
   return (
-    <ul className="flex !justify-center !items-center gap-24 w-[80%] ml-auto mr-auto pt-12">
-      <li className="inline-block w-[60%]">
+    <ul className="flex !justify-center !items-center gap-24 w-[80%] ml-auto mr-auto pt-12 max-[800px]:flex-col max-[800px]:!gap-48">
+      <li className="inline-block w-[60%] max-[800px]:text-[0.8rem] max-[800px]:w-[80%]">
         <Card
           style={{
             height: "20rem",
@@ -13,7 +13,7 @@ export default function HomeCoreFeatures() {
         >
           <CardBody>
             <Image src="/icons/code.svg" width={50} height={30} alt="code" />
-            <h1 className="py-8 !text-[white] text-[2rem] font-bold">
+            <h1 className="py-8 !text-[white] text-[2rem] font-bold leading-8">
               Decentralized Network
             </h1>
             <p className="!text-[#C1C1C1] leading-8">
@@ -24,7 +24,7 @@ export default function HomeCoreFeatures() {
           </CardBody>
         </Card>
       </li>
-      <li className="inline-block w-[60%]">
+      <li className="inline-block w-[60%] max-[800px]:text-[0.8rem] max-[800px]:w-[80%]">
         <Card
           style={{
             height: "20rem",
@@ -33,7 +33,7 @@ export default function HomeCoreFeatures() {
         >
           <CardBody>
             <Image src="/icons/Vector.svg" width={30} height={30} alt="code" />
-            <h1 className="py-8 !text-[white] text-[2rem] font-bold">
+            <h1 className="py-8 !text-[white] text-[2rem] font-bold leading-8">
               Military-Grade Encryption
             </h1>
             <p className="!text-[#C1C1C1] leading-8">
@@ -43,7 +43,7 @@ export default function HomeCoreFeatures() {
           </CardBody>
         </Card>
       </li>
-      <li className="inline-block w-[60%]">
+      <li className="inline-block w-[60%] max-[800px]:text-[0.8rem] max-[800px]:w-[80%]">
         <Card
           style={{
             height: "20rem",
@@ -57,7 +57,7 @@ export default function HomeCoreFeatures() {
               height={30}
               alt="code"
             />
-            <h1 className="py-8 !text-[white] text-[2rem] font-bold">
+            <h1 className="py-8 !text-[white] text-[2rem] font-bold leading-8">
               Enhanced Anonymity
             </h1>
             <p className="!text-[#C1C1C1] leading-8 w-[100%]">

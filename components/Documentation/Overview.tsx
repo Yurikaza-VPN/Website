@@ -4,7 +4,9 @@ import React from "react";
 export default function Overview() {
   return (
     <div>
-      <h1 className="text-6xl pb-8">Introduction</h1>
+      <h1 className="text-4xl font-bold text-gray-800 text-center mb-12">
+        Introduction
+      </h1>
       <ul>
         <li>
           <h1 className="text-3xl  font-semibold text-gray-800 pt-5 mb-6">

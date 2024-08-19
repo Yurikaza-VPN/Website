@@ -29,12 +29,12 @@ export default function HomeGettingStarted() {
   };
 
   return (
-    <div className="flex py-12 justify-between items-center w-[95%] ml-auto mr-auto pt-5">
+    <div className="flex py-12 justify-between items-center w-[95%] ml-auto mr-auto pt-5 max-[800px]:flex-col-reverse">
       <div className="gap-8 flex flex-col">
-        <h1 className="!text-[#000] text-[4rem]">
+        <h1 className="!text-[#000] text-[4rem] font-bold max-[800px]:text-[2rem]">
           Getting started with Yurikaza VPN is easier than ever
         </h1>
-        <p className="text-[2rem] text-[#4d4d4d]">
+        <p className="text-[2rem] text-[#4d4d4d] max-[800px]:text-[1rem]">
           Secure your browsing, protect your privacy, and explore the power of
           blockchain. Be among the first to experience Yurikaza VPN.
         </p>
@@ -93,6 +93,7 @@ export default function HomeGettingStarted() {
         loop
         src="/animations/Animation - 1723699689214.json"
         style={{ height: "800px", width: "800px", paddingTop: 30 }}
+        className="max-[800px]:w-[400px]"
       >
         <Controls
           visible={false}

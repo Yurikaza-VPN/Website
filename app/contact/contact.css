@@ -1,7 +1,6 @@
 p {
   line-height: 130%;
   font-size: 20px;
-  color: white !important;
   font-weight: 300;
   padding-top: 0.5rem;
 }
@@ -9,6 +8,5 @@ p {
 h2,
 h3 {
   padding-top: 2rem;
-  color: white !important;
   font-size: 30px;
 }

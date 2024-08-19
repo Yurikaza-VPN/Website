@@ -8,8 +8,15 @@ import Contribute from "@/components/Documentation/Contribute";
 import { Spinner } from "@chakra-ui/react";
 import Installation from "@/components/Documentation/Installation";
 
-import { AppShell, Sidebar, SidebarSection, NavItem } from "@saas-ui/react";
+import {
+  AppShell,
+  Sidebar,
+  SidebarSection,
+  NavItem,
+  SidebarToggleButton,
+} from "@saas-ui/react";
 import Navbar from "@/components/Documentation/Navbar";
+import UseCases from "@/components/Documentation/UseCases";
 
 export default function Page() {
   const searchParams = useSearchParams();
@@ -25,13 +32,14 @@ export default function Page() {
   return (
     <AppShell
       sidebar={
-        <Sidebar toggleBreakpoint="sm" style={{ paddingTop: "3rem" }}>
+        <Sidebar toggleBreakpoint="md" style={{ marginTop: "3rem" }}>
+          <SidebarToggleButton style={{ marginTop: "3rem" }} />
           <SidebarSection aria-label="Main">
             <NavItem
               isActive={searchData === "overview" ? true : false}
               href="/documentation?data=overview"
             >
-              Owerview
+              Overview
             </NavItem>
 
             <NavItem
@@ -47,12 +55,18 @@ export default function Page() {
             >
               How to Become a Node
             </NavItem>
+            <NavItem
+              isActive={searchData === "usecases" ? true : false}
+              href="/documentation?data=usecases"
+            >
+              Use Cases
+            </NavItem>
           </SidebarSection>
         </Sidebar>
       }
       navbar={<Navbar />}
     >
-      <div className="flex justify-between gap-12 pt-12 items-center w-[80%] ml-auto mr-auto">
+      <div className="flex justify-between gap-12 pt-12 items-center w-[80%] ml-auto mr-auto max-[800px]:w-[95%] max-[800px]:ml-auto max-[800px]:mr-auto">
         <div className="flex justify-center">
           {searchData === "overview" ? (
             <Owerview />
@@ -60,6 +74,8 @@ export default function Page() {
             <Contribute />
           ) : searchData === "installation" ? (
             <Installation />
+          ) : searchData === "usecases" ? (
+            <UseCases />
           ) : (
             <Spinner className="mt-24 text-center self-center" />
           )}

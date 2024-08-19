@@ -3,7 +3,9 @@ import React from "react";
 export default function Installation() {
   return (
     <div>
-      <h1 className="text-6xl pb-8">How to Become a Node in Yurikaza VPN</h1>
+      <h1 className="text-4xl font-bold text-gray-800 text-center mb-12">
+        How to Become a Node in Yurikaza VPN
+      </h1>
       <p>
         Becoming a node in the Yurikaza VPN network allows you to actively
         contribute to the security and functionality of a decentralized,

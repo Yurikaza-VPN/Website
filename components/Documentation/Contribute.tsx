@@ -5,7 +5,9 @@ import { FaGithub } from "react-icons/fa";
 export default function Contribute() {
   return (
     <div>
-      <h1 className="text-6xl pb-8">Contribute to Yurikaza VPN</h1>
+      <h1 className="text-4xl font-bold text-gray-800 text-center mb-12">
+        Contribute to Yurikaza VPN
+      </h1>
       <p>
         We're always looking for passionate contributors to help us improve
         Yurikaza VPN. Whether you're a developer, tester, or writer, your

@@ -16,7 +16,7 @@ export default function page() {
           <h1 className="text-7xl font-bold text-center text-[white] my-12">
             Contact Us
           </h1>
-          <p className="text-gray-600 text-lg mb-6">
+          <p className="!text-[white] text-lg mb-6">
             We’re here to help! Whether you have questions, need support, or
             want to provide feedback, the Yurikaza VPN team is here to assist
             you. Your privacy and security are our top priorities, and we’re
@@ -24,29 +24,29 @@ export default function page() {
           </p>
 
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold text-blue-600 mb-4">
+            <h2 className="text-2xl font-semibold !text-[white] mb-4">
               How to Reach Us
             </h2>
 
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">Email</h3>
-            <p className="text-gray-600">
+            <h3 className="text-xl font-semibold !text-[white] mb-2">Email</h3>
+            <p className="!text-[white]">
               Email:{" "}
               <a
                 href="mailto:yurikazavpn@gmail.com"
-                className="text-white-800 font-medium border-b-2 border-gray-800 hover:text-gray-900 hover:border-gray-900 transition-colors"
+                className="!text-[white] font-medium border-b-2 border-gray-800 hover:text-gray-900 hover:border-gray-900 transition-colors"
               >
                 yurikazavpn@gmail.com
               </a>
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-700 mt-6 mb-2">
+            <h3 className="text-xl font-semibold !text-[white] mt-6 mb-2">
               Social Media
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className=" !text-[white] mb-4">
               Stay connected with us on social media for the latest updates and
               support:
             </p>
-            <p className="text-gray-600 flex flex-col gap-2">
+            <p className="!text-[white] flex flex-col gap-2">
               <a
                 href="https://twitter.com/YurikazaVPN"
                 target="_blank"
@@ -58,7 +58,7 @@ export default function page() {
               <a
                 href="https://www.linkedin.com/company/yurikaza-vpn"
                 target="_blank"
-                className="text-white-800 font-medium  hover:text-gray-900 hover:border-gray-900 transition-colors flex gap-4 items-center"
+                className="!text-[white] font-medium  hover:text-gray-900 hover:border-gray-900 transition-colors flex gap-4 items-center"
               >
                 <FaLinkedin /> Yurikaza VPN
               </a>
@@ -66,7 +66,7 @@ export default function page() {
               <a
                 href="https://www.reddit.com/r/YurikazaVPN"
                 target="_blank"
-                className="text-white-800 font-medium   hover:text-gray-900 hover:border-gray-900 transition-colors flex gap-4 items-center"
+                className="!text-[white] font-medium   hover:text-gray-900 hover:border-gray-900 transition-colors flex gap-4 items-center"
               >
                 <FaReddit /> r/YurikazaVPN
               </a>
@@ -74,10 +74,10 @@ export default function page() {
           </div>
 
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold text-white-600 mb-4">
+            <h2 className="text-2xl font-semibold !text-[white] mb-4">
               Feedback
             </h2>
-            <p className="text-gray-600">
+            <p className="!text-[white]">
               We value your feedback and are always looking for ways to improve
               Yurikaza VPN. If you have suggestions, comments, or ideas, please
               let us know by sending an email to{" "}
@@ -92,10 +92,10 @@ export default function page() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-blue-600 mb-4">
+            <h2 className="text-2xl font-semibold !text-[white] mb-4">
               Join the Yurikaza Community
             </h2>
-            <p className="text-gray-600">
+            <p className="!text-[white] ">
               Interested in contributing to the Yurikaza VPN project? Visit our{" "}
               Contribute page to learn how you can get involved or check out our{" "}
               <a
